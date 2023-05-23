@@ -2,9 +2,22 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      home: Center(
-        child: Text('Olá mundo'),
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blueGrey[900],
+          title: Center(
+            child: Text(
+              'Eu sou Rico',
+            ),
+          ),
+        ),
+        backgroundColor: Colors.blueGrey,
+        body: Center(
+          child: Image(
+            image: AssetImage('imagens/rubi.png'),
+          ),
+        ),
       ),
     ),
   );
